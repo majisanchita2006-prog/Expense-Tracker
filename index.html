@@ -15,15 +15,26 @@
         </header>
 
         <section class="summary">
-            <div class="card">
-                <h3>Total Expenses</h3>
-                <h2 id="total">₹0</h2>
-            </div>
-            <div class="card">
-                <h3>Transactions</h3>
-                <h2 id="count">0</h2>
-            </div>
-        </section>
+    <div class="card">
+        <h3>Total Expenses</h3>
+        <h2 id="total">₹0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Transactions</h3>
+        <h2 id="count">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>This Month</h3>
+        <h2 id="monthly-total">₹0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Last Month</h3>
+        <h2 id="last-month-total">₹0</h2>
+    </div>
+</section>
 
         <section class="form-section">
             <h2>Add New Expense</h2>
@@ -46,9 +57,27 @@
         </section>
 
         <section class="transactions">
-            <h2>Recent Transactions</h2>
-            <div id="expense-list"></div>
-        </section>
+    <h2>Monthly Expense History</h2>
+
+    <select id="month-filter">
+        <option value="">Select Month</option>
+    </select>
+
+    <div class="action-buttons">
+         <button type="button" id="refresh-btn">↻ Refresh</button>
+
+         <button type="button" id="clear-btn" class="clear-btn">
+        Clear All Expenses
+         </button>
+    </div>
+
+    <div class="monthly-summary">
+        <h3>Selected Month Total</h3>
+        <h2 id="monthly-total">₹0</h2>
+    </div>
+
+    <div id="expense-list"></div>
+</section>
     </div>
 
     <script src="script.js"></script>
