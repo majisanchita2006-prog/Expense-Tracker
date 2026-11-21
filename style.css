@@ -134,3 +134,52 @@ button:hover {
         flex-wrap: wrap;
     }
 }
+#month-filter {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.monthly-summary {
+    background: #f3efff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.monthly-summary h3 {
+    color: #777;
+    font-size: 15px;
+}
+
+.monthly-summary h2 {
+    color: #6941c6;
+    margin-top: 10px;
+    font-size: 28px;
+}
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    margin: 15px 0 20px;
+    flex-wrap: wrap;
+}
+
+.action-buttons button {
+    width: auto;
+    padding: 11px 18px;
+}
+
+.clear-btn {
+    background: #dc3545;
+}
+
+.clear-btn:hover {
+    background: #b02a37;
+}
+
+#refresh-btn {
+    background: #6941c6;
+}
+
+#refresh-btn:hover {
+    background: #5230a5;
+}
