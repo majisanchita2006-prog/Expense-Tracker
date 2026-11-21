@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f8;
+    color: #25243a;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #6941c6;
+    font-size: 32px;
+}
+
+header p {
+    color: #777;
+    margin-top: 8px;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    color: #777;
+    font-size: 15px;
+}
+
+.card h2 {
+    margin-top: 12px;
+    color: #6941c6;
+    font-size: 28px;
+}
+
+.form-section, .transactions {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+button {
+    background: #6941c6;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #5230a5;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    gap: 12px;
+}
+
+.expense-item p {
+    color: #777;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+.empty {
+    color: #999;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 550px) {
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .expense-item {
+        flex-wrap: wrap;
+    }
+}
